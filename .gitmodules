@@ -4,3 +4,6 @@
 [submodule "VoliBotCSharp"]
 	path = VoliBotCSharp
 	url = https://github.com/bot-dev/VoliBotCSharp
+[submodule ".\\VolibBotCSharp"]
+	path = .\\VolibBotCSharp
+	url = https://github.com/bot-dev/VoliBotCSharp
