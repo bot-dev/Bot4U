@@ -1,0 +1,6 @@
+[submodule "LeagueSharpLoader"]
+	path = LeagueSharpLoader
+	url = https://github.com/bot-dev/LeagueSharpLoader
+[submodule "VoliBotCSharp"]
+	path = VoliBotCSharp
+	url = https://github.com/bot-dev/VoliBotCSharp
