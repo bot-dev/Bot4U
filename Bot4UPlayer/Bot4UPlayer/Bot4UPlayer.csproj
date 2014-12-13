@@ -32,6 +32,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="clipper_library">
+      <HintPath>..\..\..\..\..\Downloads\LeagueSharp\System\clipper_library.dll</HintPath>
+    </Reference>
     <Reference Include="LeagueSharp">
       <HintPath>..\..\..\..\..\Downloads\LeagueSharp\System\LeagueSharp.dll</HintPath>
     </Reference>
@@ -53,9 +56,12 @@
   <ItemGroup>
     <Compile Include="Dominion.cs" />
     <Compile Include="FollowInfo.cs" />
+    <Compile Include="GenericFollowAndWalk.cs" />
+    <Compile Include="Helpers.cs" />
     <Compile Include="Normal.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TurretAggroTracker.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
