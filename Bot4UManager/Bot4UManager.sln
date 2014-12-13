@@ -7,9 +7,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppModule.NamedPipes", "..\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppModule.InterProcessComm", "..\AppModule.InterProcessComm\AppModule.InterProcessComm.csproj", "{E98F1F7E-40B6-44C8-AC66-EC867B141FA1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeagueSharp.Loader", "..\..\LeagueSharpLoader\LeagueSharp.Loader.csproj", "{250ED4A1-BFED-472D-9395-01F34F8321A5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeagueSharp.Loader", "..\LeagueSharpLoader\LeagueSharp.Loader.csproj", "{250ED4A1-BFED-472D-9395-01F34F8321A5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RitoBot", "..\..\VoliBotCSharp\RitoBot.csproj", "{A6C071A4-BF72-4851-AA1B-252C99CEAD95}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RitoBot", "..\VoliBotCSharp\RitoBot.csproj", "{A6C071A4-BF72-4851-AA1B-252C99CEAD95}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
