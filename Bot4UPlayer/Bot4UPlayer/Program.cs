@@ -14,7 +14,8 @@ namespace Bot4UPlayer
         {
             if(Dominion.IsDominion())
             {
-                new Dominion();
+                new Normal();
+                // new Dominion();
             }
             else if(Normal.IsNormal())
             {
