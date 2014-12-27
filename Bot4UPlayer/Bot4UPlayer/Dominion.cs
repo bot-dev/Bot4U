@@ -151,7 +151,7 @@ namespace Bot4UPlayer
 
         public Dominion()
         {
-            _TS = new TargetSelector(Player.CastRange, TargetSelector.TargetingMode.Closest);
+            _TS = new TargetSelector();
             _LevelSequence = new int[] { 0, 1, 2, 0, 0, 3, 1, 0, 0, 1, 3, 1, 2, 1, 2, 3, 2, 2 };
             _ShopList = new int[] { 3006, 1036, 1053, 1028, 1036, 1036, 3134, 3071, 3086, 3044, 3057, 3078, 1038, 3072, 1038, 3072 };
 
@@ -406,10 +406,8 @@ namespace Bot4UPlayer
         {
             if (_DamageQ != null && Q.IsReady())
             {
-                Obj_AI_Hero target = SimpleTs.GetTarget(
-                                        Q.Range,
-                                        (SimpleTs.DamageType)_DamageQ.DamageType);
-
+                Obj_AI_Hero target = null;
+                
                 if (target != null && !target.IsDead)
                 {
                     Q.Cast(target, false, true);
@@ -418,9 +416,7 @@ namespace Bot4UPlayer
 
             if (_DamageW != null && W.IsReady())
             {
-                Obj_AI_Hero target = SimpleTs.GetTarget(
-                                        W.Range,
-                                        (SimpleTs.DamageType)_DamageW.DamageType);
+                Obj_AI_Hero target = null;
 
                 if (target != null && !target.IsDead)
                 {
@@ -430,9 +426,7 @@ namespace Bot4UPlayer
 
             if (_DamageE != null && E.IsReady())
             {
-                Obj_AI_Hero target = SimpleTs.GetTarget(
-                            E.Range,
-                            (SimpleTs.DamageType)_DamageE.DamageType);
+                Obj_AI_Hero target = null;
 
                 if (target != null && !target.IsDead)
                 {
@@ -442,9 +436,10 @@ namespace Bot4UPlayer
 
             if (_DamageR != null && R.IsReady())
             {
-                Obj_AI_Hero target = SimpleTs.GetTarget(
-                            R.Range,
-                            (SimpleTs.DamageType)_DamageR.DamageType);
+                Obj_AI_Hero target = null;
+                    //SimpleTs.GetTarget(
+                    //        R.Range,
+                    //        (SimpleTs.DamageType)_DamageR.DamageType);
 
                 if (target != null && !target.IsDead
                     && Player.GetSpellDamage(target, SpellSlot.R, 1) > target.Health)
