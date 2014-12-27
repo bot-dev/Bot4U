@@ -157,9 +157,6 @@ namespace Bot4UPlayer
         /// </summary>
         private void Game_OnGameLoad(EventArgs args)
         {
-            if (Game.Type != GameType.Normal) // check if the current gametype is Dominion
-                return; // stop program
-
             LevelUp(Player.Level, Player.SpellTrainingPoints);
 
             // subscribe to level up event
